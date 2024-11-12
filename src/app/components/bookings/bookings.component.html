@@ -1,0 +1,17 @@
+<p>bookings works!</p>
+<table class="table table-bordered">
+    <tr>
+        <th>orderID</th>
+        <th>vehicle Name</th>
+        <th>vehicle price</th>
+        <th>Delivery address</th>
+        <th>time</th>
+    </tr>
+    <tr *ngFor="let o of orders">
+        <td>{{o.vehicleId}}</td>
+        <td>{{o.vehicleName}}</td>
+        <td>{{o.vehiclePrice}}</td>
+        <td>{{o.address}}</td>
+        <td>{{o.time}}</td>
+    </tr>
+</table>

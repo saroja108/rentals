@@ -1,0 +1,62 @@
+<div class="row" *ngIf="vehicle">
+    <div class="cpl-md-3">
+        <img [src]="vehicle.vehicleImage" alt="" class="img-fluid">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>{{vehicle.vehicleCompany}} {{vehicle.vehicleName}}</h4>
+                <p>Available at {{vehicle.availableTime}}</p>
+
+                <p><span class="badge bg-primary">{{vehicle.rating}} <i class="fa-fa-stars"></i></span></p>
+            </div>
+            <div class="col-md-6">
+                <h4>price:{{vehicle.vehiclePrice}}</h4>
+                <button class="btn btn-primary"data-bs-target="#mymodal" data-bs-toggle="modal"(click)="openmodal(vehicle)">BookNow <i class="fa-fa-check"></i></button>
+                <button class="btn btn-warning"(click)="addtowishlist(vehicle)">Wishlist <i class="fa-fa-heart"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="orderedvehicle">
+<div class="modal-fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>book now</h3>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="" class="form-label">Vehicle Name</label>
+                        <input type="text" class="form-control"name="vname"[(ngModel)]="orderedvehicle.vehicleName" disabled="">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Vehicle Price</label>
+                        <input type="text" class="form-control"name="vprice"[(ngModel)]="orderedvehicle.vehiclePrice" disabled="">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Vehicle username</label>
+                        <input type="text" class="form-control"name="uname"[(ngModel)]="uname" disabled="">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Address</label>
+                        <textarea name="adr" id=""[(ngModel)]="uaddress"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Time</label>
+                        <input type="text" class="form-control"name="uname"[(ngModel)]="utime" disabled="">
+                    </div> <br>
+                    <div class="form-group">
+                        <button class="btn btn-success"type="submit">order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+

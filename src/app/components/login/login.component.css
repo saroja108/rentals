@@ -1,0 +1,16 @@
+.car{
+    background-image:url("https://www.pixel4k.com/wp-content/uploads/2018/10/red-chevrolet-camaro_1539111771.jpg");
+    background-repeat: no-repeat;
+    background-size:1550px 780px;
+}
+.container-fluid{
+    height:729px;
+}
+.myform{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:20px;
+    border-radius: 10px;
+    margin-top:250px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}

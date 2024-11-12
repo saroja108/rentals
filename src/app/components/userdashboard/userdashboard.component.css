@@ -1,0 +1,6 @@
+nav{
+    height: 100vh;
+    color: white;
+    position:fixed;
+    z-index: 2px;
+}

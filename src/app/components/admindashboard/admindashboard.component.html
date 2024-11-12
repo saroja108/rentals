@@ -1,0 +1,22 @@
+<p>admindashboard works!</p>
+<div class="row myrow">
+    <div class="col-md-2 sidenav">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="navbar-brand">
+                <h4>rentals</h4>
+            </div>
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a routerLink="/admin/cars" class="nav-link" ><i class="fa fa-motorcycle" aria-hidden="true"></i>Cars</a></li>
+                    <li class="nav-item"><a routerLink="/admin/bikes" class="nav-link" ><i class="fa fa-motorcycle" aria-hidden="true"></i>Bikes</a></li>
+                    <li class="nav-item"><a routerLink="/admin/orders" class="nav-link" ><i class="fa fa-motorcycle" aria-hidden="true"></i>orders</a></li>
+                    <li class="nav-item"><a routerLink="/admin/manage" class="nav-link" ><i class="fa fa-motorcycle" aria-hidden="true"></i>Manage vehicles</a></li>
+                    <li class="nav-item"><a routerLink="/admin/add" class="nav-link" ><i class="fa fa-motorcycle" aria-hidden="true"></i>Add vehicles</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="col-md-10">
+        <router-outlet></router-outlet>
+    </div>
+</div>
